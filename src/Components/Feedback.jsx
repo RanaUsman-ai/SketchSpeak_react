@@ -56,7 +56,7 @@ const FeedbackReviews = () => {
     <div style={{marginTop : "120px" , padding :"1rem"}}>
     <div className="container my-5">
       <div>
-        <img src={img12}   style={{
+        <img src={img12}  alt='not found' style={{
     
     objectFit: 'contain'
   }}/>
