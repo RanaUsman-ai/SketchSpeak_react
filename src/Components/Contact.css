@@ -1,0 +1,87 @@
+.contact-container {
+  margin-top: 120px;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-top {
+  display: flex;
+  gap: rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: px;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background : #feb47b;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #555;
+}
+
+.contact-image {
+  flex: 1;
+  padding: 0%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: px;
+}
+
+.contact-bottom {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-map {
+  flex: 2;
+}
+
+.contact-info {
+  flex: 1;
+  background: #fe8802;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.contact-info h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}

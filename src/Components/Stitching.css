@@ -1,0 +1,110 @@
+.stitching-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stitching-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -- FIXED 3 columns -- */
+.stitching-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.stitching-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stitching-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* IMAGE BIGGER HEIGHT */
+.stitching-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.stitching-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.stitching-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.stitching-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  .stitching-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stitching-grid {
+    grid-template-columns: 1fr;
+  }
+  .stitching-img {
+    height: 200px;
+  }
+  .stitching-title {
+
+    font-size: 2rem;
+  }
+}
+
+
+/* --- Hero Banner --- */
+.hero-banner {
+  background-image: url('./images/5.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px; /* 🟢 navbar ki height ke barabar */
+}
+
+
+.hero-content {
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* 👈 optional dark overlay */
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Existing stitching grid CSS (keep as before) */
