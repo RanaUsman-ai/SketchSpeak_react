@@ -11,7 +11,6 @@ const Shopping = () => {
   const [loading, setLoading] = useState(false);
   let isMounted = true;
   useEffect(() => {
-    let isMounted = true;
   
     const getProducts = async () => {
       setLoading(true);
