@@ -9,9 +9,9 @@ const Shopping = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState([]);
   const [loading, setLoading] = useState(false);
-  let isMounted = true;
+ 
   useEffect(() => {
-  
+    let isMounted = true;
     const getProducts = async () => {
       setLoading(true);
       try {

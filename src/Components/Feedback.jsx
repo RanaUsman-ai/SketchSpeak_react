@@ -56,10 +56,7 @@ const FeedbackReviews = () => {
     <div style={{marginTop : "120px" , padding :"1rem"}}>
     <div className="container my-5">
       <div>
-        <img src={img12}  alt='not found' style={{
-    
-    objectFit: 'contain'
-  }}/>
+        <img src={img12}  alt='not found' style={{objectFit: 'contain' }}/>
       <h2 className="mb-4" style={{padding:"50px", fontSize:"3rem"}}>Customer Reviews & Feedback</h2>
       </div>
 

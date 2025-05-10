@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './login.css'; // ✅ ya './login.css' agar same file use karni hai
+import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import signupValidation from './SignUpValid';
 import axios from "axios";
-import SignupImage from './images/4.jpg'; // ✅ same image
-
+import SignupImage from './images/4.jpg';
 const Signup = () => {
   const [values, setValues] = useState({
     name: '',
@@ -30,11 +29,10 @@ const Signup = () => {
         .catch(err => console.log(err));
     }
   };
-
   return (
     <div className="auth-container">
       <div className="auth-left">
-      <img src={SignupImage} alt="Login" />
+        <img src={SignupImage} alt="Login" />
         <h1>Your Style Our Vision</h1>
         <p>Turn your creativity into reality. Join a community where every stitch, every design, tells a story.</p>
       </div>
@@ -42,18 +40,23 @@ const Signup = () => {
       <div className="auth-right">
         <h2>Sign Up</h2>
         <form className="auth-form" onSubmit={handleSubmit}>
-          <input type="text" name="name" onChange={handleInput} placeholder="Name" required />
+          <input type="text" name="name" value={values.name} onChange={handleInput} placeholder="Name" required />
           {error.name && <span>{error.name}</span>}
-          <input type="email" name="email" onChange={handleInput} placeholder="Email" required />
+
+          <input type="email" name="email" value={values.email} onChange={handleInput} placeholder="Email" required />
           {error.email && <span>{error.email}</span>}
-          <input type="password" name="password" onChange={handleInput} placeholder="Password" required />
+
+          <input type="password" name="password" value={values.password} onChange={handleInput} placeholder="Password" required />
           {error.password && <span>{error.password}</span>}
+
           <button type="submit">Sign Up</button>
           <p>Already have an account? <Link to="/">Login</Link></p>
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
+
 
 export default Signup;
+
