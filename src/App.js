@@ -38,14 +38,14 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/virtualdom" element={<VirtualDom />} />
+              <Route path="/virtualdom" element={<VirtualDom />} /> 
               <Route path="/stitching" element={<Stitching />} />
               <Route path="/prototypedesign" element={<PrototypeDesign />} />
               <Route path="/store" element={<Store />} />
               <Route path="/feedback" element={<Feedback />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/measurements" element={<Measurements />} />
-              <Route path="/products/:id" element={<ProductsInfo />} />
+               <Route path="/products/:id" element={<ProductsInfo />} />
             </>
           )}
         </Routes>

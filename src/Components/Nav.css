@@ -46,7 +46,7 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   padding: 0 2rem;
   z-index: 999;
 }
@@ -72,7 +72,7 @@ nav {
 ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 32px;
 }
 
 ul li a {
@@ -93,6 +93,10 @@ ul li a::after {
   background: #fff;
   transition: width 0.3s;
 }
+.homee
+{
+  margin-left: 10rem;
+}
 
 ul li a:hover {
   color: #000;
@@ -106,6 +110,7 @@ ul li a:hover::after {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  
 }
 
 .menu span {
@@ -135,6 +140,7 @@ ul li a:hover::after {
 
   .menu {
     display: flex;
+    margin-left: 2rem;
   }
 }
 

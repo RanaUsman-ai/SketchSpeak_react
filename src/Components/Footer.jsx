@@ -22,14 +22,24 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Contact</h4>
-          <p>Email: stitch.sketchspeak@gmail.com</p>
-          <p>Phone: +92 315 4526202</p>
-          <p>Address: Shop#5 Icon Shopping Mall , Mall Road Lahore, Pakistan</p>
+          <p>Email: <a href="mailto:stitch.sketchspeak@gmail.com">stitch.sketchspeak@gmail.com</a></p>
+          <p>Phone: <a href="tel:+923154526202">+92 315 4526202</a></p>
+          <p>Address: Shop#5 Icon Shopping Mall,<br />Mall Road Lahore, Pakistan</p>
         </div>
       </div>
 
+      <div className="footer-learn-more">
+     
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms & Conditions</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} YourStore. All rights reserved.<br/> <h3>Developed By Muh@mmad Usm@n</h3></p>
+        <p>&copy; {new Date().getFullYear()} YourStore. All rights reserved.</p>
+        <p className="developer">Developed By <strong>Muh@mmad Usm@n</strong></p>
       </div>
     </footer>
   );
