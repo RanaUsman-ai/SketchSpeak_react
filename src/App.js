@@ -24,7 +24,8 @@ function App() {
   return (
     <div>
       {/* Navbar only when logged in */}
-      {isLoggedIn && <Navbar />}
+      {/* {isLoggedIn && <Navbar />} */}
+      <Navbar/>
 
       <main>
         <Routes>
@@ -52,7 +53,8 @@ function App() {
       </main>
 
       {/* Footer only when logged in */}
-      {isLoggedIn && <Footer />}
+      {/*  */}
+      <Footer />
     </div>
   );
 }
