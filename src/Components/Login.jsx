@@ -4,6 +4,7 @@ import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import validation from "./LoginValid";
 import axios from 'axios';
+import img1 from "./images/2.jpg"
 const Login = () => {
   const [values, setValues] = useState({
     email: '',
@@ -29,7 +30,9 @@ const Login = () => {
       axios.post("http://localhost:8081/login", values)
         .then(res => {
           if (res.data.length !== 0) {
-            navigate('/Home');
+            Login(); 
+            navigate('/home');
+
           } else {
             alert("No Record Found");
           }
@@ -40,6 +43,13 @@ const Login = () => {
 
   return (
     <div className="auth-container">
+     <div className="auth-left">
+        <img src={img1} alt="Login" />
+        <h1>Your Style Our Vision</h1>
+        <p>Turn your creativity into reality. Join a community where every stitch, every design, tells a story.</p>
+      </div> 
+     
+    <div className="login-right">
       <h2>Login</h2>
       <form className="auth-form" onSubmit={handleSubmit}>
         <input
@@ -66,6 +76,8 @@ const Login = () => {
         <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
       </form>
     </div>
+    </div>
+    
   );
 };
 
