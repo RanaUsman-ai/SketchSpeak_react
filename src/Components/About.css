@@ -7,6 +7,28 @@
   align-items: center;
   overflow: hidden;
 }
+.about {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.back_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.back_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 /* Side Images */
 .side-image {
@@ -62,9 +84,9 @@
 /* Center Container */
 .about-container {
   position: relative;
-  width: 450px;
+  width: 400px;
   margin-top: 60px;
-  height: 450px;
+  height: 470px;
   background-image: url('./images/1.jpeg'); /* tumhari image ka path */
   background-size: cover;
   background-position: center;
@@ -78,8 +100,8 @@
 /* Cards inside Center */
 .about-card {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(15px);
   border-radius: 25px;
@@ -91,10 +113,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-top: 2.2rem;
+  margin-left: 2.3rem;
+  
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

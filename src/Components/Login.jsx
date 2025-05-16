@@ -30,7 +30,7 @@ const Login = () => {
       axios.post("http://localhost:8081/login", values)
         .then(res => {
           if (res.data.length !== 0) {
-            Login(); 
+  
             navigate('/home');
 
           } else {

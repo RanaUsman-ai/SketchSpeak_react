@@ -30,9 +30,13 @@ const AboutCards = () => {
 
   return (
     <div className="about">
+      <div className='back_image'>
+        <img src={img6} alt="left" />
+      </div>
+      
       {/* Left Image */}
       <div className="side-image left">
-        <img src={img6} alt="left" />
+        {/* <img src={img6} alt="left" /> */}
       </div>
 
       {/* Right Image */}

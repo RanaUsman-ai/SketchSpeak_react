@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './Components/About';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
@@ -15,12 +15,17 @@ import Stitching from './Components/Stitching';
 import PrototypeDesign from './Components/PrototypeDesign';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+
 function App() {
+  const location = useLocation();
+  const hideNavbarFooter = location.pathname === '/' || location.pathname === '/signup';
+
   return (
     <div>
-      {/* <Navbar /> */}
+      {!hideNavbarFooter && <Navbar />}
+
       <main>
-          <Routes>
+        <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
@@ -36,7 +41,8 @@ function App() {
           <Route path="/products/:id" element={<ProductsInfo />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+
+      {!hideNavbarFooter && <Footer />}
     </div>
   );
 }

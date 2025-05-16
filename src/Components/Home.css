@@ -54,7 +54,7 @@
 
 .banner-img {
   width: 100%;
-  max-width: 60rem; /* Increased size */
+  max-width: 40rem; /* Increased size */
   height: auto;
 }
 
@@ -72,9 +72,10 @@
   justify-content: center;
   transition: transform 0.3s ease;
   background-color: transparent;
-  top: 30%;
-  width: 200px;
-  height: 200px;
+  top: 40%;
+  margin-right: 10rem;
+  width: 250px;
+  height: 250px;
 }
 
 .profile-img,
@@ -83,6 +84,7 @@
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
+  
   transition: transform 0.3s ease-in-out;
 }
 
@@ -184,4 +186,5 @@
   .section-two {
     flex-direction: column-reverse;
   }
+        
 }

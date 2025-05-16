@@ -12,6 +12,10 @@
   overflow: hidden;
 }
 
+.home{
+  margin-left: 100px;
+}
+
 .login-left img {
  width: 1200px ;
   height: 700px;
